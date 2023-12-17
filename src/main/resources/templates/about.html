@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title th:text= "${title}"> </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body style="background:#212529;">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+
+<header th:insert="blocks/header :: header"></header>
+
+
+<main>
+  <div style="background-color: rgba(0, 0, 0, .1);">
+    <section class="py-5 text-center container ">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light " style="color: #adb5bd;">Автор работы</h1>
+          <p class="lead" style="color: rgba(173, 181, 189, 0.75);">Минаев Георгий Владимирович</p>
+          <p class="lead" style="color: rgba(173, 181, 189, 0.75);">По заказу института прикладной математики, физики и информатики влгу </p>
+          <p>
+            <a href="https://vk.com/id662620297" class="btn btn-primary my-2">ВКонтакте</a>
+            <a href="https://t.me/shpalZ" class="btn btn-secondary my-2">Телеграмм</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+
+
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+
+</html>
